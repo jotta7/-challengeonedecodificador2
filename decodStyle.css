@@ -1,0 +1,241 @@
+/*CSS BEM*/
+
+/*CABEÇALHO*/
+body{
+    background-image: url(./img/giphy\ ciberpunk\ horizontal.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family:'Press Start 2P', cursive;
+    padding: 0px 16px;
+    
+} 
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    max-height: 1024px;
+    max-width: 1200px;
+    
+}
+
+
+/*.cabecalho{}*/
+.cabecalho_logo img{
+    min-width: 32px;
+    height:48px;
+    margin:24px 0;  
+}
+.cabecalho h1{
+    color: rgb(232, 23, 173);
+    font-size: 5vh;
+    font-weight: bold;
+    text-shadow:1px 1px 1px #03e9f4;
+    font-family:'Press Start 2P', cursive;
+    margin-top: 14px;
+    animation:typing 2s steps(10) infinite;
+}
+@keyframes typing{
+    0%{ color: transparent;
+        width: 0;
+    }
+    50%{color: rgb(232, 23, 173);
+    }
+    100%{
+        width: 50%;
+         
+    }
+}
+
+/*CONTEUDO PRINCIPAL*/
+.corpoPricipal{
+    flex-basis: 80%;
+    width: auto;
+    
+}
+/*.conteudoPrincipal{}*/
+.conteudoPrincipal p{
+    display: inline-flex;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffff00;
+    
+}
+.conteudoPrincipal img{
+    width: 16px;
+    border-radius: 50%;
+}
+.conteudoPrincipal img:hover{
+    background: #ffff00;
+   
+}
+/*.conteudoPrincipal__formulario{}*/
+.conteudoPrincipal__formulario textarea{
+    background: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    margin: 24px 0;
+    border: none;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+.botoes{
+    display: flexbox;
+    margin: auto;
+   
+}
+.botao1{
+    padding: 24px;
+    width: 343px;
+    height: 67px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #0A3871, rgb(232, 23, 173));
+    align-self: stretch;
+    margin: 24px 0 0 0;
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #FFFFFF;
+    box-shadow: 3px 3px 6px #000;
+}
+.botao1:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: none;
+}
+.botao2{
+    padding: 24px;
+    border-radius: 24px;
+    width: 343px;
+    height: 67px;
+    background: none;
+    align-self: stretch;
+    border: solid 2px #ffff00;
+    margin: 27px 0;
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.botao2:hover{
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    color:#ffff00;
+    box-shadow: 
+    0 0 5px  #03e9f4,
+    0 0 15px  #03e9f4,
+    0 0 35px  #03e9f4,
+    0 0 70px  #03e9f4;
+    transition: 1s;
+    cursor: pointer;
+}
+/* EXIBE TEXTO*/
+.exibeTexto{
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 20%;
+    width: 400px;
+    height: 554px;
+    margin: 44px;
+    padding: 32px;
+    background: rgb(232, 23, 173, 0.7);
+    box-shadow: 0px 24px 32px -8px #03e9f4;
+    border-radius: 32px;
+    text-align: center;
+}
+.exibeTexto img{
+    width: 200px;
+    
+}
+
+.exibeTexto h2{
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'Press Start 2P', cursive;
+}
+.exibeTexto p{
+    color: #000;
+    font-size: 16px;
+    font-family:'Press Start 2P', cursive;
+    margin: 32px 0;
+} 
+.mostraTexto{
+    max-height: 465px;
+    word-wrap: break-word;
+    overflow:scroll;
+    
+}
+::-webkit-scrollbar-thumb {
+    background: #ffff00;
+}
+::-webkit-scrollbar-track {
+    background: #03e9f4;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    height: 0;
+}
+
+.exibeTexto button{
+    position: relative;
+    display: none;
+    padding: 24px;
+    border-radius: 24px;
+    width: 100%;
+    height: 67px;
+    margin-top: 32px;
+    background: none;
+    align-self: stretch;
+    border: solid 2px #ffff00;
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #000;
+}
+.exibeTexto button:hover{
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    color:#ffff00;
+    box-shadow: 
+    0 0 5px  #03e9f4,
+    0 0 15px  #03e9f4,
+    0 0 35px  #03e9f4,
+    0 0 70px  #03e9f4;
+    transition: 1s;
+    cursor: pointer;
+}
+/* RESPONSIVIDADE*/
+@media (max-width: 768px){
+    body{
+        background-image: url(./img/giphy\ ciberpunk\ vertical.gif);
+        background-size:cover;
+        background-repeat: repeat; 
+    } 
+
+    .container{
+        display: block;
+        height: 993px; 
+    } 
+    .exibeTexto{
+        width: 640px;
+        height: 133px;
+        margin: 44px 0px;
+    }
+    .exibeTexto img{
+        display:none;
+    }
+    .mostraTexto{
+        max-height: 50px;
+    }
+}
+@media (max-width:393px){
+    .cabecalho h1{
+        font-size: 3vh;
+    }
+    .exibeTexto{
+        width: 280px;
+        height: 186px;
+    
+    }
+    .mostraTexto{
+        max-height: 100px;
+    }
+}
