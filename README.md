@@ -1,7 +1,7 @@
 # challengeonedecodificador2
 <img src="./img/ORACLEONE.jpeg" alt="one + alura">
 
-<img src="./img/Hnet-image.gif" alt="one + alura" align="center">
+<img src="./img/previewDecod.png" alt="one + alura" align="center">
 
 # Sobre
 <p>
