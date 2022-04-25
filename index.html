@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--CABECALHO-->
+    <div class="container">
+        <section class="corpoPrincipal">
+            <header class="cabecalho">
+                <figure class="cabecalho_logo">
+                    <img src="./img/alura.png" alt="Logo Alura">
+                </figure>
+                <h1>Decodificador_</h1>
+            </header>
+    <!--CONTEUDO PRINCIPAL-->        
+            <main class="conteudoPrincipal">
+                <form action=""  class="conteudoPrincipal__formulario">
+                    <textarea name="textoDecod" id="textoDecod" cols="30" rows="9" placeholder="Digite seu texto"></textarea>
+                </form>
+                <img src="./img/atecao.png" alt="ateção">
+                <p>Apenas letras minúsculas e sem acento.</p>
+                <div class="botoes">
+                    <button class="botao1" onclick="criptografar()">Criptografar</button>
+                    <button class="botao2" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </main>
+        </section>
+    <!--EXIBIÇÃO DE TEXTO-->    
+        <div class="exibeTexto">
+            <div class="mostraTexto">
+                <figure class="figureImg">
+                <img src="./img/detetive.png" alt="">
+                </figure>
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>digite um texto que você deseja criptografar ou descriptografar.</p>
+    
+            </div>
+            <button id="copiar" onclick="copiar()">copiar</button>
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
